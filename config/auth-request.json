@@ -1,0 +1,22 @@
+{
+    "url": "https://connect.remotelock.com/session",
+    "method": "POST",
+    "headers": {
+        "Host": "connect.remotelock.com",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0",
+        "Accept": "application/json",
+        "Accept-Language": "en",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Content-Type": "application/json;charset=utf-8",
+        "Content-Length": "68",
+        "Origin": "https://connect.remotelock.com",
+        "Connection": "keep-alive",
+        "Referer": "https://connect.remotelock.com/sign-in",
+        "Cookie": "_remotelock_production_web_session=s%3A75C3wd1-HB623EfN_W87tJ0WHinMtvML.4ckKtLtRBfALkyUMuMDjPZs%2BRbsbRyBsfKsML7yN2i0",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-origin",
+        "Sec-GPC": "1"
+    },
+    "body": "{\"identifier\":\"dustinrasener@gmail.com\",\"password\":\"remP0kerPr0ock\"}"
+}

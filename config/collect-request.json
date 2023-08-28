@@ -1,0 +1,24 @@
+{
+    "url": "https://connect.remotelock.com/api/events",
+    "method": "POST",
+    "headers": {
+        "Host": "connect.remotelock.com",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0",
+        "Accept": "application/vnd.lockstate.v1+json",
+        "Accept-Language": "en",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Cache-Control": "no-cache",
+        "x-obfuscated-get": "true",
+        "Content-Type": "application/json;charset=utf-8",
+        "Content-Length": "123",
+        "Origin": "https://connect.remotelock.com",
+        "Connection": "keep-alive",
+        "Referer": "https://connect.remotelock.com/devices/schlage-home-locks/601a9e8c-d2a1-483d-8e5b-8450435594d3/events?page=2",
+        "Cookie": "_remotelock_production_web_session=s%3Ai_d8jp1wU5o0GY3duPF7AFbhriHSApvO.geCuKBydqDpOBEc70Z5YyQ96LAZ3YF7wYEV31ode6zQ",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-origin",
+        "Sec-GPC": "1"
+    },
+    "body": "{\"page\":\"2\",\"attributes\":{\"publisher_id\":\"601a9e8c-d2a1-483d-8e5b-8450435594d3\"},\"include\":\"associated_resource,publisher\"}"
+}
