@@ -31,10 +31,10 @@ installed. Virtualenvs are optional, but recommended.
 
 There are five scripts to be run in sequence:
 
+1. `auth.py` logs in to your RemoteLock account and saves a session.
 1. `collect.py` collects all of the lock data for a specified lock.
 1. `filter.py` filters the events to the events that are relevant to the user in question.
-1. `summarize.py` summarizes the output of `filter.py` by calculating the difference in times from unlock to final lock.
-1. `summarize.py` prepares a CSV file that can be uploaded to REPStracker.
+1. `summarize.py` summarizes the output of `filter.py` by calculating the difference in times from unlock to final lock and prepares a CSV file that can be uploaded to REPStracker.
 1. `archive.py` saves all intermediate files in a zip file, stripping sensitive data
 
 I recommend that you retain the intermediate files used by these scripts in your records. `archive.py` will create a zip archive of the intermediate files. **Save this file in your records.** This guards against the possibility that some logic in the script is incorrect and allows you to fully audit the resulting data should the need arise. Cheap insurance.
@@ -135,6 +135,7 @@ Found 19 events
 - **BE CAREFUL AT THIS STEP**
 - **You will want to copy/paste values for Property Address and Activity Group to ensure that entries are propertly recorded by REPStracker**
 - **Make sure `username` matches EXACTLY to a team member you set up on REPStracker use the `--team_member` argument if it isn't the same as the `username`**
+- **IMPORTANT NOTE**: This script isn't perfect; it is impossible to account for all situations. **It makes an assumption that is generally (but not always) true: That the team member you're concerned about is the only one at the property during their visit**; when multiple team members visit, the lock data can be unreliable. Cross-check the output with your cameras or other sources of information, particularly if a time for a date seems out-of-whack.
 - `Acitivity Group` names are available on the `Import Hours` screen in REPStracker
 - Provide the same username used in the last script
 - If you use REPStracker, you can upload the CSV file in the web app using the "Import Hours" function
