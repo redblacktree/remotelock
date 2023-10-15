@@ -24,7 +24,7 @@ def main(args):
         username = input("Email: ")    
     password = getpass.getpass("Password: ")
 
-    with (open("auth-preauth-request.json", "r") as f):
+    with (open("config/auth-preauth-request.json", "r") as f):
         request = json.load(f)
         url = request["url"]
         logger.info(f"URL: {url}")
@@ -47,7 +47,7 @@ def main(args):
         session_cookie = response.headers["Set-Cookie"].split(";")[0]
         logger.debug(f"Session Cookie: {session_cookie}")
 
-    with (open("auth-request.json", "r") as f):
+    with (open("config/auth-request.json", "r") as f):
         request = json.load(f)
         url = request["url"]
         logger.info(f"URL: {url}")
